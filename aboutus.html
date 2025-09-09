@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>Secure Future Coverage</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row" style="background-color: #3bdc16;border-left:15px solid white;">
+
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2 border-bottom py-1">
+                    <div class="container-fluid">
+
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logobg1.jpg" alt="Secure Future Coverage Logo" class="rounded-pill" style="height:70px; width:200px;">
+                        </a>
+                        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse menubar" id="navbarNav">
+                            <ul class="navbar-nav gap-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#humanaModal"><i class="fa-solid fa-building-lock fs-4 text-success me-2"></i> More Secure</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="help.html"><i class="fa-solid fa-hand-holding-medical fs-4 text-success me-2"></i>Help</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-globe fs-4 text-success me-2"></i>USA</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-flex align-items-center me-4 mt-2 mb-2">
+                            <button id="searchToggle" class="btn btn-outline-secondary me-2">
+                                <i class="fas fa-search"></i>
+                                Search
+                            </button>
+                            <input type="text" id="searchBox" class="form-control search-box" placeholder="Type to search...">
+                        </div>
+
+                        <div class="col-sm-2 col-md-2 mt-2 mb-2">
+                            <a href="contactus.html" class="btncontact btn-lg w-auto" data-text="button">
+                                <span>Contact Us</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container py-4">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12">
+                                            <div class="card shadow border-0">
+                                                <div class="row g-0 flex-column flex-md-row">
+                                                    <div class="col-md-5 img-hover-zoom">
+                                                        <img src="images/contactus.jpg" class="img-fluid w-100 h-100 object-fit-cover rounded-top rounded-md-start" alt="contact support agent">
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="card-body p-4">
+                                                            <h4 class="mb-3">Get in Touch</h4>
+                                                            <form class="row g-3">
+                                                                <div class="col-12">
+                                                                    <label for="name" class="form-label">Name</label>
+                                                                    <input type="text" class="form-control" id="name" placeholder="Enter Your Full Name">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <label for="inputEmail4" class="form-label">Email</label>
+                                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Your Email">
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label for="age" class="form-label">Age</label>
+                                                                    <input type="number" class="form-control" id="age" placeholder="Enter Age">
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label for="gender" class="form-label">Gender</label>
+                                                                    <select class="form-select" id="gender">
+                                                                        <option selected disabled>Select Gender...</option>
+                                                                        <option>Male</option>
+                                                                        <option>Female</option>
+                                                                        <option>Other</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <label for="phonenumber" class="form-label">Phone Number</label>
+                                                                    <input type="tel" class="form-control" id="phonenumber" placeholder="Enter Number">
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <label for="query" class="form-label">Query</label>
+                                                                    <textarea class="form-control" id="query" rows="3" placeholder="Type your query..."></textarea>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                                        <label class="form-check-label" for="gridCheck">
+                                                                            Check me out
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12 text-center">
+                                                                    <button type="submit" class="btn btn-primary w-50">Submit</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div> </div> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="humanaModal" tabindex="-1" aria-labelledby="humanaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content p-4">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title fw-bold fs-5" style="font-family: Cambria;" id="humanaModalLabel">Other Humana Sites:</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="px-3 pb-3 nav-links">
+                                <a href="#" style="font-family: Cambria;" class="fs-5">For Providers <i class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="#" style="font-family: Cambria;" class="fs-5">For Employers <i class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="#" style="font-family: Cambria;" class="fs-5">For Group Medicare <i class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="#" style="font-family: Cambria;" class="fs-5">For Agents & Brokers <i class="bi bi-box-arrow-up-right"></i></a>
+                                <a href="#" style="font-family: Cambria;" class="fs-5">For Investors <i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="card-custom h-100">
+                                            <img src="images/my-humana-logo.svg" alt="MyHumana" class="card-logo">
+                                            <p style="font-family: Cambria;" class="fs-5">View plan info and stay up-to-date on MyHumana.</p>
+                                            <a href="#" class="card-arrow"><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="card-custom h-100">
+                                            <img src="images/go365-logo.svg" alt="Go365" class="card-logo">
+                                            <p style="font-family: Cambria;" class="fs-5">Complete activities. Earn Points. Reward yourself.</p>
+                                            <a href="#" class="card-arrow"><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="card-custom h-100">
+                                            <img src="images/centerwell-pharmacy-logo.svg" alt="CenterWell" class="card-logo">
+                                            <p style="font-family: Cambria;" class="fs-5">Order, refill and track prescriptions online or with the app.</p>
+                                            <a href="#" class="card-arrow"><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse menubar" id="megaMenuNavbar">
+                        <ul class="navbar-nav mb-2 mb-lg-0 fs-6">
+                            <li class="nav-item dropdown position-static">
+                                <a class="nav-link dropdown-toggle fs-5 text-success" href="#" data-bs-toggle="dropdown" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Insurance Plans</a>
+                                <div class="dropdown-menu mega-menu p-4 shadow w-100">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12 border-end">
+                                            <h5 class="fw-bold plan-option fs-4 fw-bold" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-target="medicare">Medicare</h5>
+                                            <p class="text-muted small fs-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Coverage for those 65+ or eligible due to certain health conditions <i class="bi bi-chevron-right"></i></p>
+
+                                            <h5 class="fw-bold plan-option fs-4 fw-bold" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-target="individual">Individual & Family</h5>
+                                            <p class="text-muted small fs-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Stand alone Plans for dental, vision and hearing care.<i class="bi bi-chevron-right"></i></p>
+
+                                            <h5 class="fw-bold plan-option fs-4" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-target="medicaid">Medicaid</h5>
+                                            <p class="text-muted small fs-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Coverage for adults and children who qualify based on income.<i class="bi bi-chevron-right"></i></p>
+                                        </div>
+                                        <div class="col-lg-4 col-12" id="category2">
+                                            <ul class="list-unstyled"></ul>
+                                        </div>
+                                        <div class="col-lg-4 col-12" id="category3">
+                                            <ul class="list-unstyled"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown position-static">
+                                <a class="nav-link dropdown-toggle fs-5 text-success" href="#" data-bs-toggle="dropdown" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Learn About Medicare</a>
+                                <div class="dropdown-menu mega-menu p-4 shadow w-100">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-12 border-end">
+                                            <h5 class="fw-bold plan-option fs-4 fw-bold" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-target="medicare">Medicare Basics</h5>
+                                            <p class="text-muted small fs-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">New to Medicare? Here's a great place to get started.<i class="bi bi-chevron-right"></i></p>
+
+                                            <h5 class="fw-bold plan-option fs-4" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-target="individual">Types of Plans</h5>
+                                            <p class="text-muted small fs-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Learn about Medicare Advantage, RX Medicare, Supplement plans <i class="bi bi-chevron-right"></i></p>
+
+                                            <h5 class="fw-bold plan-option fs-4" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-target="medicaid">Medicare Enrollment</h5>
+                                            <p class="text-muted small fs-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Understand the rules for who can enroll and when.<i class="bi bi-chevron-right"></i></p>
+                                        </div>
+                                        <div class="col-lg-8 col-12 d-flex">
+                                            <ul class="list-unstyled flex-fill" id="insuranceCat2"></ul>
+                                            <div class="flex-fill" id="insuranceCat3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown position-static">
+                                <a class="nav-link dropdown-toggle fs-5 text-success" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" href="#" data-bs-toggle="dropdown">Member Resources</a>
+                                <div class="dropdown-menu mega-menu p-4 shadow w-100">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12 border-end">
+                                            <h5 class="fw-bold plan-option fs-4" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-target="medicare">Use Your Plan</h5>
+                                            <p class="text-muted small fs-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">View Your Plan details, see claims, pay your premium and more <i class="bi bi-chevron-right"></i></p>
+                                            <h5 class="fw-bold plan-option fs-4" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-target="individual">Manage Your Health</h5>
+                                            <p class="text-muted small fs-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Find care near you and explore way to live your healthiest life.<i class="bi bi-chevron-right"></i></p>
+                                            <h5 class="fw-bold plan-option fs-4" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" data-target="medicaid">Pharmacy</h5>
+                                            <p class="text-muted small fs-5" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Fill a Prescription, find a pharmacy, check if you drugs are covered and more.<i class="bi bi-chevron-right"></i></p>
+                                        </div>
+                                        <div class="col-lg-8 col-12" id="insuranceCat4">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#"></a></li>
+                                                <li><a class="dropdown-item" href="#"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#megaMenuNavbar, #navbarNav">
+                        <span><i class="bi bi-list"></i> Menu</span>
+                    </button>
+
+                    <div class="ms-auto">
+                        <div class="text-center px-3 rounded" style="background-color: #b3f6a4;">
+                            <a href="findcare.html" class="text-dark text-decoration-none">
+                                <img src="images/findcare.png" alt="Find Care Icon" style="height:50px;width:50px;">
+                                <p class="mb-0 small fw-bold">Find Care</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+  
+
+    <div class="container-fluid">
+        <div class="row">
+            <img src="images/Safe-info.png" alt="" class="img-fluid" style="width:100%; height:450px;">
+        </div>
+    </div>
+
+    <div class="container-fluid text-center text-white p-2" style="background-color: #58c614;">
+        <a href="#" class="text-dark fw-bold text-decoration-none text-capitalize" style="font-family:Georgia, 'Times New Roman', Times, serif;">
+            ↑ Back to top
+        </a>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="logo mb-3">
+                        <img src="images/logobg1.jpg" alt="Secure Future Coverage Logo" class="img-fluid">
+                    </div>
+                    <p>Live your best life with a Future Secure Advantage plan.</p>
+                    <div class="social-icons mt-3">
+                      <!-- Social Icons -->
+<a href="https://www.instagram.com/securefuturecoverage?igsh=MXh2YWgwbmt0czZpNg=="><i class="fab fa-instagram fa-1x"></i></a>
+<a href="https://www.linkedin.com/company/secure-future-coverage/"><i class="fab fa-linkedin fa-1x"></i></a>
+<a href="#"><i class="fab fa-facebook fa-1x"></i></a>
+<a href="#"><i class="fab fa-twitter fa-1x"></i></a>
+<a href="#"><i class="fab fa-youtube fa-1x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Ethics & Compliance</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h4>Contact Info</h4>
+               <p><strong>Registered Office:</strong><br>Vemtech LLC 30N. Gould St. Ste R Sheridan, WY 82801</p>
+                    <p class="mb-1">📧 support@securefuture.com</p>
+                    <p>☎ 011-45653583</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4>Policies</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">POSH Policy</a></li>
+                        <li><a href="#">Transparency Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p class="mb-0">© 2025 Secure Future Coverage. All rights reserved.Developed By Sadhana CyberTech Pvt. Ltd.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
