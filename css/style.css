@@ -536,3 +536,48 @@
     font-size: 14px;
     color: #666;
 }
+
+
+
+.custom-dropdown {
+  max-height: 250px;          /* dropdown ki max height */
+  overflow-y: auto;           /* sirf vertical scrollbar */
+  overflow-x: hidden;         /* horizontal scroll hata diya */
+  border-radius: 8px;         
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 5px 0;
+}
+
+/* Dropdown item styling */
+.custom-dropdown .dropdown-item {
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  color: #0A50A5;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #70c515;   /* green highlight */
+  color: white;
+  transform: translateX(5px);  /* thoda slide effect */
+  border-radius: 6px;
+}
+
+/* Stylish Scrollbar */
+.custom-dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-dropdown::-webkit-scrollbar-track {
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.custom-dropdown::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #70c515, #5ba911);
+  border-radius: 8px;
+}
+
+.custom-dropdown::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #5ba911, #4a900d);
+}
