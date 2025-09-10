@@ -408,15 +408,22 @@
 
 
 
-        <div class="container-fluid p-0">
-            <div class="row g-0">
-                <div class="col-12">
-                    <img src="images/aboutus.jpg" alt="About Us" class="w-100"
-                        style="height: 500px; object-fit: cover;">
-                </div>
-            </div>
-        </div>
+      <div class="container-fluid p-0 position-relative">
+  <!-- Background Image -->
+  <img src="images/aboutus.jpg" alt="About Us"
+       class="w-100" style="height: 500px; object-fit: cover;">
 
+  <!-- Overlay Text -->
+  <div class="position-absolute top-50 start-50 translate-middle text-center text-light px-3">
+    <h1 class="fw-bold display-4 text-light shadow bg-info px-3">Behind Every Plan</h1>
+    <h1 class="text-capitalize bg-success">A team that cares</h1>
+   
+  </div>
+
+  <!-- Dark Overlay Layer -->
+  <div class="position-absolute top-0 start-0 w-100 h-100"
+       style="background: rgba(0,0,0,0.4);"></div>
+</div>
 
 
        <div class="container-fluid py-5 values-section">
@@ -495,7 +502,7 @@
 
     </div>
 
-
+ <hr>
     <!-- end-- -->
 
 
@@ -546,7 +553,7 @@
         </div>
     </div>
 
-
+ <hr>
 
 
     <!-- about  -->
@@ -557,13 +564,13 @@
       
       <!-- Left Content -->
       <div class="col-lg-6 mb-4 mb-lg-0">
-        <h2 class="fw-bold mb-3 text-primary">About Medicare</h2>
-        <p class="text-muted fs-5">
+        <h2 class="fw-bold mb-3" style="color: #3bdc16;font-family: Georgia, 'Times New Roman', Times, serif;">About Medicare</h2>
+        <p class="text-muted fs-5" >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Eaque doloremque blanditiis ut commodi consequuntur quas, sint tempora 
           dicta est dolorem. Nostrum laborum nam sunt numquam maxime, nobis eum incidunt libero!
         </p>
-        <a href="#" class="btn btn-primary btn-lg mt-3 rounded-pill shadow">
+        <a href="#" class="btn btn-lg mt-3 rounded shadow text-white fw-bold" style="background-color: #3bdc16;">
           Learn More
         </a>
       </div>
