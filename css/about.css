@@ -1,0 +1,80 @@
+swiper-container {
+    width: 100%;
+    height: 320px;
+    margin: 20px auto;
+  }
+
+  swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+
+
+
+
+
+    .values-section {
+    /* background: linear-gradient(135deg, #a8b1c4, #2a5298); */
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .values-section::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 8%, transparent 8%) repeat;
+    background-size: 50px 50px;
+    opacity: 0.25;
+    z-index: 0;
+  }
+  .values-section .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Glassmorphism effect for cards */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Hover effect */
+  .hover-card {
+    transition: all 0.3s ease-in-out;
+  }
+  .hover-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Circle icon holder */
+  .icon-circle {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  }
+  .icon-circle img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+  }
