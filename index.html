@@ -10,8 +10,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/style.css">
@@ -20,8 +20,65 @@
     <title>Secure Future Coverage</title>
 </head>
 
-<body>
+<body onload="openModal()">
 
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #3bdc16;">
+                    <h5 class="modal-title text-uppercase text-white ms-auto fs-3 fw-bold" id="exampleModalLabel">
+                        Secure Future Coverage
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-uppercase">
+                    <form class="row g-3">
+                        <div class="col-md-12">
+                            <label for="inputname4" class="form-label">Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="inputname4" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="inputEmail4" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputage4" class="form-label">Age <span class="text-danger">*</span></label>
+                            <input type="number" class="form-control" id="inputage4" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputgender4" class="form-label">Gender <span
+                                    class="text-danger">*</span></label>
+                            <select id="inputgender4" class="form-control" required>
+                                <option value="">Select Gender...</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputphone" class="form-label">Phone Number <span
+                                    class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" inputmode="numeric" id="inputphone" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputMessage" class="form-label">Query or Message <span
+                                    class="text-danger">*</span></label>
+                            <textarea class="form-control" id="inputMessage" rows="2" placeholder="Type here..."
+                                required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn text-white fw-bold w-100"
+                                style="background-color: #3bdc16;">
+                                SUBMIT
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="header-placeholder"></div>
 
     <main>
@@ -32,17 +89,24 @@
                 <div class="col-lg-5 col-md-12 mb-4 mb-lg-0 ps-lg-5 px-3">
                     <p class="fs-5" id="gudmorning"></p>
                     <h1 class="display-4">Live your best life with a Future Secure Advantage plan</h1>
-                    <p class="fs-5">Protect your tomorrow by planning today. Explore health coverage options that keep your future secure, reduce financial stress, and give peace of mind for you and your family.</p>
-                    <button type="button" data-aos="fade-right" data-aos-duration="2000" class="btn btn-lg text-white" style="background-color: #70c515;"> 
-                        <a href="medicares.html" style="color: white;font-family: Cambria Math;" class="fw-bold text-decoration-none">Explore Medicare Plans 
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    <p class="fs-5">Protect your tomorrow by planning today. Explore health coverage options that keep
+                        your future secure, reduce financial stress, and give peace of mind for you and your family.</p>
+                    <button type="button" data-aos="fade-right" data-aos-duration="2000" class="btn btn-lg text-white"
+                        style="background-color: #70c515;">
+                        <a href="medicares.html" style="color: white;font-family: Cambria Math;"
+                            class="fw-bold text-decoration-none">Explore Medicare Plans
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="currentColor">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                </path>
                             </svg>
                         </a>
                     </button>
                 </div>
                 <div class="col-lg-7 col-md-12 text-center" data-aos="zoom-in" data-aos-duration="2000">
-                    <img src="images/live_your_best.jpg" alt="Happy family enjoying the outdoors" class="img-fluid" style="border-radius:0px 0px 0px 50px;">
+                    <img src="images/live_your_best.jpg" alt="Happy family enjoying the outdoors" class="img-fluid"
+                        style="border-radius:0px 0px 0px 50px;">
                 </div>
             </div>
         </div>
@@ -53,112 +117,180 @@
 
         <!-- Explore all  -->
         <div class="container text-center my-5">
-            <h2 class="mb-4 display-5 text-capitalize" style="color: #70c515;font-family:Georgia, 'Times New Roman', Times, serif;">Explore all Secure Future Coverage plan options</h2>
-            <div class="row g-4 justify-content-center">
-                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="2000">
-                    <a href="medicares.html" class="fw-bold text-decoration-none" style="color: #0A50A5;font-family: Cambria Math;">
-                        <div class="shadow p-3 rounded fs-5 fw-bold hover-card text-center h-100 d-flex flex-column justify-content-center align-items-center">
-                            <img src="images/medicine.png" alt="Medicare icon" height="70" width="80" class="mb-2">
-                            <span>Medicare <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" /></svg></span>
+            <h2 class="mb-4 display-5 text-capitalize"
+                style="color: #70c515;font-family:Georgia, 'Times New Roman', Times, serif;">Explore all Secure Future
+                Coverage plan options</h2>
+            <div class="container py-5">
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Medicare Plans -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card card-custom text-center p-4 h-100 shadow">
+                            <div class="icon-circle">
+                                <img src="images/plus.png" alt="" class="img-fluid" style="max-height: 50px;">
+                            </div>
+                            <h5 class="fw-bold">Medicare Plans</h5>
+                            <p class="text-muted">Explore plans for seniors including Part B, Part D, and Medicare
+                                Advantage options.</p>
+                            <a href="#" class="btn mt-2 fw-bold text-white" style="background-color:#58c614;">Learn
+                                More</a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="3000">
-                    <a href="dental-insurance.html" style="color: #0A50A5;font-family: Cambria Math;" class="fw-bold text-decoration-none">
-                        <div class="shadow p-3 rounded fs-5 fw-bold hover-card text-center h-100 d-flex flex-column justify-content-center align-items-center">
-                            <img src="images/dental.png" alt="Dental icon" height="80" width="80" class="mb-2">
-                            <span>Dental <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></span>
+                    </div>
+
+                    <!-- ACA Marketplace -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card card-custom text-center p-4 h-100 shadow">
+                            <div class="icon-circle">
+                                <img src="images/addtocart.png" alt="" class="img-fluid" style="max-height: 50px;">
+                            </div>
+                            <h5 class="fw-bold">ACA Marketplace Health Plans</h5>
+                            <p class="text-muted">Get affordable coverage through the ACA <br> Marketplace.</p>
+                            <a href="#" class="btn mt-2 fw-bold text-white" style="background-color:#58c614;">Learn
+                                More</a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="4000">
-                    <a href="vision-ibsurance.html" style="color: #0A50A5;font-family: Cambria Math;" class="fw-bold text-decoration-none">
-                        <div class="shadow p-3 rounded fs-5 fw-bold hover-card text-center h-100 d-flex flex-column justify-content-center align-items-center">
-                            <img src="images/vision.jpg" alt="Vision icon" height="80" width="80" class="mb-2">
-                            <span>Vision <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></span>
+                    </div>
+
+                    <!-- Final Expense Insurance -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 ">
+                        <div class="card card-custom text-center p-4 h-100 shadow">
+                            <div class="icon-circle">
+                                <img src="images/openbook.png" alt="" class="img-fluid" style="max-height: 50px;">
+                            </div>
+                            <h5 class="fw-bold">Final Expense Insurance</h5>
+                            <p class="text-muted">Protect your loved ones from unexpected expenses with final expense
+                                insurance.</p>
+                            <a href="#" class="btn mt-2 fw-bold text-white" style="background-color:#58c614;">Learn
+                                More</a>
                         </div>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="5000">
-                    <a href="medicaid.html" style="color: #0A50A5;font-family: Cambria Math;" class="fw-bold text-decoration-none">
-                        <div class="shadow p-3 rounded fs-5 fw-bold hover-card text-center h-100 d-flex flex-column justify-content-center align-items-center">
-                            <img src="images/iconmedicare.png" alt="Medicaid icon" height="80" width="90" class="mb-2">
-                            <span>Medicaid <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></span>
-                        </div>
-                    </a>
+                    </div>
+
                 </div>
             </div>
+
         </div>
 
-       
+
 
         <div class="container-fluid my-5">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 ps-lg-5 px-3">
-                    <h2 style="color: #70c515;font-family:Georgia, 'Times New Roman', Times, serif;;" class="text-capitalize" data-aos="fade-right" data-aos-duration="4000">New member? Activate your Secure Future Coverage account today.</h2>
+                    <h2 style="color: #70c515;font-family:Georgia, 'Times New Roman', Times, serif;;"
+                        class="text-capitalize" data-aos="fade-right" data-aos-duration="4000">New member? Activate your
+                        Secure Future Coverage account today.</h2>
                     <div class="border-start border-end border-warning border-3 p-3 my-4">
-                        <p class="fs-5" style="font-family: Cambria Math;">Healthcare is one of the most important aspects of our lives, and planning for it in advance ensures that you and your family stay protected in the years to come. Secure future coverage means taking steps today to safeguard your tomorrow.</p>
+                        <p class="fs-5" style="font-family: Cambria Math;">Healthcare is one of the most important
+                            aspects of our lives, and planning for it in advance ensures that you and your family stay
+                            protected in the years to come. Secure future coverage means taking steps today to safeguard
+                            your tomorrow.</p>
                     </div>
-                    <a href="registration.html" class="fw-bold btn btn-lg mb-4 text-white text-capitalize" style="background-color: #70c515;">
-                        Activate Secure Future Coverage account <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                    <a href="registration.html" class="fw-bold btn btn-lg mb-4 text-white text-capitalize"
+                        style="background-color: #70c515;">
+                        Activate Secure Future Coverage account <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path
+                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                            </path>
                         </svg>
                     </a>
                     <div class="card shadow">
-                        <h5 class="card-header fs-3 text-center" style="background-color: #70c515;font-family:Georgia, 'Times New Roman', Times, serif;">Already have a Secure Future Coverage account?</h5>
+                        <h5 class="card-header fs-3 text-center"
+                            style="background-color: #70c515;font-family:Georgia, 'Times New Roman', Times, serif;">
+                            Already have a Secure Future Coverage account?</h5>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-6 mb-2">
-                                    <a href="signin.html" class="text-decoration-none fw-bold fs-5" style="color: #0A50A5;font-family: Cambria Math;">View claims <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></a><br>
-                                    <a href="pay-premium.html" class="text-decoration-none fw-bold fs-5" style="color: #0A50A5;font-family: Cambria Math;">Pay premium <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></a>
+                                    <a href="signin.html" class="text-decoration-none fw-bold fs-5"
+                                        style="color: #0A50A5;font-family: Cambria Math;">View claims <svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                            height="24" fill="currentColor">
+                                            <path
+                                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                            </path>
+                                        </svg></a><br>
+                                    <a href="pay-premium.html" class="text-decoration-none fw-bold fs-5"
+                                        style="color: #0A50A5;font-family: Cambria Math;">Pay premium <svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                            height="24" fill="currentColor">
+                                            <path
+                                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                            </path>
+                                        </svg></a>
                                 </div>
                                 <div class="col-sm-6 mb-2 border-start border-2">
-                                    <a href="#" class="text-decoration-none fw-bold fs-5" style="color: #0A50A5;font-family: Cambria Math;">Refill Rx <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></a><br>
-                                    <a href="findcare.html" class="text-decoration-none fw-bold fs-5" style="color: #0A50A5;font-family: Cambria Math;">Find Care <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></a>
+                                    <a href="#" class="text-decoration-none fw-bold fs-5"
+                                        style="color: #0A50A5;font-family: Cambria Math;">Refill Rx <svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                            height="24" fill="currentColor">
+                                            <path
+                                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                            </path>
+                                        </svg></a><br>
+                                    <a href="findcare.html" class="text-decoration-none fw-bold fs-5"
+                                        style="color: #0A50A5;font-family: Cambria Math;">Find Care <svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                            height="24" fill="currentColor">
+                                            <path
+                                                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                            </path>
+                                        </svg></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 text-center mb-4 mb-lg-0 ps-4">
-                    <img src="images/newmember1.jpg" alt="A person filling out insurance forms on a tablet" data-aos="zoom-in" data-aos-duration="4000" class="img-fluid rounded">
+                    <img src="images/newmember1.jpg" alt="A person filling out insurance forms on a tablet"
+                        data-aos="zoom-in" data-aos-duration="4000" class="img-fluid rounded">
                 </div>
             </div>
         </div>
 
-         <!-- end  -->
+        <!-- end  -->
 
 
-         <!-- review section -->
+        <!-- review section -->
         <div class="container-fluid py-5" style="background-color: #e6f7dc;">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-8 col-md-12 mb-4 mb-lg-0">
-                        <h3 style="color: #58c614;" class="text-capitalize">Review 2025 Medicare Advantage plans side by side</h3>
-                        <p class="fs-5" style="font-family: Cambria Math;">We can help you review plans based on your needs and budget. Just answer a few questions and we’ll create a list for you.</p>
-                        <a href="viewplan.html" type="button" style="background-color: #3e930d;" class="btn btn-lg text-white fw-bold">Review 2025 plans<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></a>
+                        <h3 style="color: #58c614;" class="text-capitalize">Review 2025 Medicare Advantage plans side by
+                            side</h3>
+                        <p class="fs-5" style="font-family: Cambria Math;">We can help you review plans based on your
+                            needs and budget. Just answer a few questions and we’ll create a list for you.</p>
+                        <a href="viewplan.html" type="button" style="background-color: #3e930d;"
+                            class="btn btn-lg text-white fw-bold">Review 2025 plans<svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="currentColor">
+                                <path
+                                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                                </path>
+                            </svg></a>
                     </div>
                     <div class="col-lg-4 col-md-12" data-aos="fade-left" data-aos-duration="2000">
-                        <img src="images/review.jpeg" alt="A smiling agent helping a couple review documents" class="img-fluid rounded">
+                        <img src="images/review.jpeg" alt="A smiling agent helping a couple review documents"
+                            class="img-fluid rounded">
                     </div>
                 </div>
             </div>
         </div>
-<!-- end -->
+        <!-- end -->
 
 
-<!-- stay informed -->
+        <!-- stay informed -->
         <div class="container-fluid my-5">
             <div class="row">
-                <h2 class="fw-bold ms-2 text-capitalize" style="color: #70c515;font-family:Georgia, 'Times New Roman', Times, serif;">Stay informed</h2>
+                <h2 class="fw-bold ms-2 text-capitalize"
+                    style="color: #70c515;font-family:Georgia, 'Times New Roman', Times, serif;">Stay informed</h2>
             </div>
             <hr>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card h-100 custom-card">
-                        <img src="images/medicareenrollment.png" style="height:270px;" class="card-img-top" alt="Calendar with marked dates">
+                        <img src="images/medicareenrollment.png" style="height:270px;" class="card-img-top"
+                            alt="Calendar with marked dates">
                         <div class="card-body">
-                            <h5 class="card-title text-secondary fw-bold" style="font-family: Cambria Math;">Medicare Enrollment</h5>
+                            <h5 class="card-title text-secondary fw-bold" style="font-family: Cambria Math;">Medicare
+                                Enrollment</h5>
                             <p class="card-text fs-4 text-decoration-underline" style="font-family: Cambria Math;">
                                 Medicare Enrollment Periods: When can I enroll?
                             </p>
@@ -169,7 +301,8 @@
                     <div class="card h-100 custom-card">
                         <img src="images/card2.png" class="card-img-top" alt="Diagram comparing two insurance plans">
                         <div class="card-body">
-                            <h5 class="card-title text-secondary fw-bold" style="font-family: Cambria Math;">Types of Medicare plans</h5>
+                            <h5 class="card-title text-secondary fw-bold" style="font-family: Cambria Math;">Types of
+                                Medicare plans</h5>
                             <p class="card-text fs-4 text-decoration-underline" style="font-family: Cambria Math;">
                                 Medicare Advantage vs. Original Medicare: Which option should I choose?
                             </p>
@@ -178,9 +311,11 @@
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card h-100 custom-card">
-                        <img src="images/family-health-insurance.jpg" class="card-img-top" style="height:270px;" alt="A happy family protected by insurance">
+                        <img src="images/family-health-insurance.jpg" class="card-img-top" style="height:270px;"
+                            alt="A happy family protected by insurance">
                         <div class="card-body">
-                            <h5 class="card-title text-secondary fw-bold" style="font-family: Cambria Math;">Medicare Enrollment</h5>
+                            <h5 class="card-title text-secondary fw-bold" style="font-family: Cambria Math;">Medicare
+                                Enrollment</h5>
                             <p class="card-text fs-4 text-decoration-underline" style="font-family: Cambria Math;">
                                 How to change your Medicare Advantage plan
                             </p>
@@ -194,49 +329,71 @@
         <!-- end -->
 
 
-          <!-- important information -->
+        <!-- important information -->
         <div class="container my-5">
             <div class="row">
-                <h2 class="text-center fs-1" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: #3d812d;" data-aos="zoom-in">Important information</h2>
+                <h2 class="text-center fs-1"
+                    style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: #3d812d;"
+                    data-aos="zoom-in">Important information</h2>
             </div>
             <div class="row">
-                <div class="accordion accordion-flush w-75 mx-auto" data-aos="fade-up" data-aos-duration="2000" id="accordionFlushExample">
+                <div class="accordion accordion-flush w-75 mx-auto" data-aos="fade-up" data-aos-duration="2000"
+                    id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
-                            <button style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="fs-5 border-bottom border-light border-5 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <button style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"
+                                class="fs-5 border-bottom border-light border-5 accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
                                 Notice of Kelly Benefits privacy incident
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <p>Notice of privacy incident involving Kelly Benefits, a vendor for Humana.</p>
-                                <a href="#" style="color: purple;" class="fw-bold">Learn more about Kelly Benefits privacy incident</a>
+                                <a href="#" style="color: purple;" class="fw-bold">Learn more about Kelly Benefits
+                                    privacy incident</a>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo">
-                            <button style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="fs-5 accordion-button collapsed border-bottom border-light border-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <button style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"
+                                class="fs-5 accordion-button collapsed border-bottom border-light border-5"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false" aria-controls="flush-collapseTwo">
                                 Notice of MedicareCompare USA, Inc. privacy incident
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Notice of privacy incident involving MedicareCompare USA, Inc., a vendor for Humana.</p>
-                                <a href="#" style="color: purple;" class="fw-bold">Learn more about MedicareCompare USA, Inc. privacy incident</a>
+                                <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                    Notice of privacy incident involving MedicareCompare USA, Inc., a vendor for Humana.
+                                </p>
+                                <a href="#" style="color: purple;" class="fw-bold">Learn more about MedicareCompare USA,
+                                    Inc. privacy incident</a>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree">
-                            <button style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="fs-5 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <button style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"
+                                class="fs-5 accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
                                 Notice of Episource privacy incident
                             </button>
                         </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Notice of Episource privacy incident involving Episource, a vendor for Humana/CarePlus. </p>
-                                <a href="#" style="color: purple;" class="fw-bold">Learn more about Episource privacy incident</a>
+                                <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                                    Notice of Episource privacy incident involving Episource, a vendor
+                                    for Humana/CarePlus. </p>
+                                <a href="#" style="color: purple;" class="fw-bold">Learn more about Episource privacy
+                                    incident</a>
                             </div>
                         </div>
                     </div>
@@ -259,7 +416,7 @@
 
     <!-- header footer section added -->
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             // Fetch and inject the header
             fetch('header.html')
                 .then(response => {
@@ -289,6 +446,14 @@
                 });
         });
     </script>
+
+    <script>
+        function openModal() {
+            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+            myModal.show();
+        }
+    </script>
+
 
 </body>
 
