@@ -1,29 +1,6 @@
-swiper-container {
-    width: 100%;
-    height: 320px;
-    margin: 20px auto;
-  }
-
-  swiper-slide {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-
-
-
-
-
-
-    .values-section {
+  /* about us css   */
+  
+  .values-section {
     /* background: linear-gradient(135deg, #a8b1c4, #2a5298); */
     background-color: #fff;
     position: relative;
@@ -79,9 +56,6 @@ swiper-container {
     object-fit: contain;
   }
 
-
-
-
 .bg-gradient{
      background-color:linear-gradient(green,red);
 }
@@ -93,3 +67,62 @@ swiper-container {
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 3px 6px rgba(0,0,0,0.6);
   }
+
+  /* end  */
+
+  /* css support page */
+
+    .custom-card {
+      transition: all 0.3s ease;
+      border-radius: 12px;
+      background: #fff;
+      max-width: 22rem; /* keeps cards uniform */
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .custom-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      background: #eafaf2; /* light green tint */
+    }
+    .custom-card img {
+      transition: transform 0.3s ease;
+    }
+    .custom-card:hover img {
+      transform: scale(1.1);
+    }
+    .card-body {
+      flex-grow: 1; /* pushes footer or content evenly */
+    }
+
+
+
+       .custom-card {
+    max-width: 320px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    margin: 0 auto; /* center each card */
+  }
+
+  .custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  }
+    /* Floating Chat Button */
+    .chat-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #198754;
+      color: white;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      cursor: pointer;
+      z-index: 1050;
+    }
