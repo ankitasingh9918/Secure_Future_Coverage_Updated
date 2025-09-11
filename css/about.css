@@ -159,3 +159,28 @@
       font-weight: 600;
       color: #333;
     }
+
+ .faq-card {
+      border-radius: 10px;
+      border: 1px solid #dcdcdc;
+      cursor: pointer;
+      background: #fff;
+      transition: 0.3s;
+    }
+    .faq-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .faq-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .faq-sub {
+      color: gray;
+      font-size: 0.9rem;
+    }
+    .faq-btn {
+      border: none;
+      background: none;
+      color: green;
+      font-size: 1.2rem;
+    }
