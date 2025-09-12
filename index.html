@@ -20,7 +20,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/footer.css"> -->
+
+    <link rel="shortcut icon" href="images/logobg1.jpg" type="image/x-icon">
 
     <title>Secure Future Coverage</title>
 </head>
@@ -305,13 +307,28 @@
 
         <!-- stay informed -->
         <div class="container-fluid my-5">
-            <div class="row">
-                <h2 class="fw-bold ms-2 text-capitalize"
+            <div class="row text-center">
+                <h2 class="fw-bold ms-2 text-capitalize "
                     style="color: #70c515;font-family:Georgia, 'Times New Roman', Times, serif;" data-aos="zoom-in"
-                    data-aos-duration="2000">Stay informed</h2>
+                    data-aos-duration="2000">stay healthy-Stay informed</h2>
+                    <p>We've got the latest advice,tips, and news to help you get the most out of your benefits,find the best healthcare,and stay Healthy</p>
+                    <span><a href="blog.html" class="fs-5 btn btn-success text-white fw-bold">All Blogs</a></span>
             </div>
             <hr>
             <div class="row g-4">
+                  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card h-100 custom-card">
+                        <img src="images/blog.jpeg" class="card-img-top" style="height:270px;"
+                            alt="A happy family protected by insurance">
+                        <div class="card-body">
+                            <h5 class="card-title text-secondary fw-bold" style="font-family: Cambria Math;">Medicare
+                                Enrollment</h5>
+                            <a class="card-text fs-4 text-decoration-underline text-dark" style="font-family: Cambria Math;">
+                               The Easy Guide to Medicare Enrollment
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card h-100 custom-card">
                         <img src="images/blog1.png" style="height:270px;" class="card-img-top"
@@ -329,9 +346,11 @@
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000">
                     <div class="card h-100 custom-card">
-                        <img src="images/blog2.png" class="card-img-top" alt="Diagram comparing two insurance plans">
+                        <img src="images/blog2.png" class="card-img-top" style="height:270px;"
+                            alt="Diagram comparing two insurance plans">
                         <div class="card-body">
-                            <h5 class="card-title text-secondary fw-bold" style="font-family: Cambria Math;">Medicare Myths</h5>
+                            <h5 class="card-title text-secondary fw-bold" style="font-family: Cambria Math;">Medicare
+                                Myths</h5>
                             <a href="https://www.instagram.com/p/DOdlA3ZEmb7/?utm_source=ig_web_copy_link&igsh=b2s5bnR4eW02MHJh"
                                 class="card-text fs-4 text-decoration-underline text-dark"
                                 style="font-family: Cambria Math;">
@@ -340,19 +359,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="card h-100 custom-card">
-                        <img src="images/family-health-insurance.jpg" class="card-img-top" style="height:270px;"
-                            alt="A happy family protected by insurance">
-                        <div class="card-body">
-                            <h5 class="card-title text-secondary fw-bold" style="font-family: Cambria Math;">Medicare
-                                Enrollment</h5>
-                            <p class="card-text fs-4 text-decoration-underline" style="font-family: Cambria Math;">
-                                How to change your Medicare Advantage plan
-                            </p>
-                        </div>
-                    </div>
-                </div>
+              
             </div>
         </div>
 
@@ -410,8 +417,7 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree">
-                            <button 
-                                class="fs-5 accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            <button class="fs-5 accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
                                 Notice of Episource privacy incident
@@ -509,9 +515,11 @@
     </script>
 
     <script>
-        function openModal() {
-            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-            myModal.show();
+        window.onload = function () {
+            setTimeout(function () {
+                var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+                myModal.show();
+            }, 8000); // 5000ms = 5 seconds
         }
     </script>
 
