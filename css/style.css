@@ -9,6 +9,8 @@
     body {
       line-height: 1.6;
       color: #333;
+        overflow-x: hidden;
+
     }
 
     body h3{
@@ -612,5 +614,18 @@
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #70c515;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
 
-
+.back-to-top:hover {
+  background: #58a912;
+}
