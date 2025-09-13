@@ -2,32 +2,31 @@
 <div class="container-fluid py-2" style="background-color: #58c614;">
   <div class="row align-items-center">
     
-    <!-- Heading with custom bg -->
+    <!-- Static Heading -->
     <div class="col-auto">
-      <h5 class="mb-0 px-3 py-1 text-dark text-bold" 
-          style=" border-radius:4px;">
-        Important Notifications :
-      </h5>
+      <h5 class="mb-0 fw-bold">Important Notifications :</h5>
     </div>
 
     <!-- Scrolling Notifications -->
     <div class="col">
-      <div class="overflow-hidden position-relative" style="height: 30px;">
-        <div class="d-flex align-items-center ticker">
-          <img src="images/new1.gif" alt="" class="me-2" height="20">
-          <span class="text-white fw-bold">Here are some notifications...</span>
+      <marquee behavior="scroll" direction="left" scrollamount="10" class="text-white fw-bold"  onmouseover="this.stop();" 
+               onmouseout="this.start();">
+        <img src="images/new1.gif" alt="" class="me-2" height="20">
+        Here are some notifications...
 
-          <img src="images/new1.gif" alt="" class="ms-5 me-2" height="20">
-          <span class="text-white fw-bold">New update is available, please check...</span>
+        <img src="images/new1.gif" alt="" class="ms-5 me-2" height="20">
+        New update is available, please check...
 
-          <img src="images/new1.gif" alt="" class="ms-5 me-2" height="20">
-          <span class="text-white fw-bold">Server maintenance scheduled tonight.</span>
-        </div>
-      </div>
+        <img src="images/new1.gif" alt="" class="ms-5 me-2" height="20">
+        Server maintenance scheduled tonight.
+      </marquee>
     </div>
 
   </div>
 </div>
+
+
+
 
 
     <div class="row">
@@ -98,7 +97,7 @@
                         <ul class="navbar-nav ms-auto">
                             
   <li class="nav-item">
-    <a class="nav-link btn text-white px-3" style="background-color:#70c515;" href="support.html">
+    <a class="nav-link btn text-white px-3 fw-bold" style="background-color:#70c515;" href="support.html">
       Login
     </a>
   </li>

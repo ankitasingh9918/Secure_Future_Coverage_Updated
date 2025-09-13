@@ -603,14 +603,11 @@
   background: linear-gradient(180deg, #5ba911, #4a900d);
 }
 
-
-/* 🔄 Smooth scrolling animation */
 .ticker {
   display: inline-flex;
   white-space: nowrap;
-  animation: ticker 15s linear infinite;
+  animation: ticker 18s linear infinite;
 }
-
 @keyframes ticker {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
