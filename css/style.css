@@ -604,6 +604,16 @@
 }
 
 
+/* 🔄 Smooth scrolling animation */
+.ticker {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: ticker 15s linear infinite;
+}
 
+@keyframes ticker {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
 
 
