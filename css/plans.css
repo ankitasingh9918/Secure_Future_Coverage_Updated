@@ -18,3 +18,19 @@
   .row-equal .medicare-part {
     flex: 1; /* make inner cards take full column height */
   }
+
+
+
+
+   /* Hover effect for cards */
+  .medicare-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .medicare-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    
+  }
+
+  
