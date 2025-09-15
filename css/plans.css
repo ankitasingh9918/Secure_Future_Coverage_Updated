@@ -1,0 +1,20 @@
+  /* Hover effect for each part */
+  .medicare-part {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: default;
+    height: 100%; /* make all inner cards same height */
+  }
+
+  .medicare-part:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Ensure all columns stretch to the same height */
+  .row-equal > [class*='col-'] {
+    display: flex;
+  }
+
+  .row-equal .medicare-part {
+    flex: 1; /* make inner cards take full column height */
+  }
