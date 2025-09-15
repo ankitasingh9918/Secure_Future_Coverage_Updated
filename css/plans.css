@@ -33,4 +33,21 @@
     
   }
 
+
+
+  /* Hover effect for benefit rows */
+  .benefit-row {
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    background-color: #ffffff; /* default white */
+  }
+
+  .benefit-row:hover {
+    background-color: #e6f7e6; /* light green on hover */
+    transform: translateY(-3px);
+  }
+
+  .benefit-row:hover i {
+    color: #218838; /* darker green icon on hover */
+  }
   
