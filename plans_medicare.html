@@ -18,10 +18,39 @@
     <!-- <link rel="stylesheet" href="css/plans.css"> -->
 
     <title>Medicare Plans</title>
+    <style>
+        .faq-card {
+            border-radius: 10px;
+            border: 1px solid #dcdcdc;
+            cursor: pointer;
+            background: #fff;
+            transition: 0.3s;
+        }
 
+        .faq-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .faq-sub {
+            color: gray;
+            font-size: 0.9rem;
+        }
+
+        .faq-btn {
+            border: none;
+            background: none;
+            color: green;
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 
-<body onload="openModal()">
+<body>
 
 
     <div id="header-placeholder"></div>
@@ -123,7 +152,7 @@
                             <div class="container my-4">
                                 <div class="row justify-content-center row-equal">
                                     <div class="col-12 col-lg-12"> <!-- Outer card -->
-                                        <div class="card mb-4 shadow-sm">
+                                        <div class="card border-0 mb-4 shadow">
                                             <div class="card-body">
                                                 <div class="row g-4 row-equal">
                                                     <!-- Part A -->
@@ -174,11 +203,11 @@
                                                     <!-- Part D -->
                                                     <div class="col-12 col-md-6 d-flex">
                                                         <div
-                                                            class="p-4 border-start border-4 border-danger bg-light rounded medicare-part">
+                                                            class="p-4 border-start border-4 border-success bg-light rounded medicare-part">
                                                             <p
                                                                 class="text-secondary d-flex align-items-start fs-5 mb-0">
                                                                 <i
-                                                                    class="fa-solid fa-check text-danger fw-bold fs-4 me-3 mt-1"></i>
+                                                                    class="fa-solid fa-check text-success fw-bold fs-4 me-3 mt-1"></i>
                                                                 <strong class="me-2">Part D:</strong> Covers
                                                                 prescription drugs, which can make a big difference if
                                                                 you need regular medications.
@@ -349,8 +378,9 @@
 
                         <div class="d-flex align-items-center benefit-row p-3 rounded">
                             <i class="bi bi-check-circle-fill text-success fs-3 flex-shrink-0 me-3"></i>
-                            <p class="mb-0 flex-grow-1 fs-5"><strong>Clear Comparisons:</strong> We put Medicare Insurance Plans side by side so you can see what each one covers.
-</p>
+                            <p class="mb-0 flex-grow-1 fs-5"><strong>Clear Comparisons:</strong> We put Medicare
+                                Insurance Plans side by side so you can see what each one covers.
+                            </p>
                         </div>
                     </div>
 
@@ -358,8 +388,9 @@
                     <div class="col-12 col-md-6 border-start border-4 border-success">
                         <div class="d-flex align-items-center benefit-row p-3 rounded">
                             <i class="bi bi-check-circle-fill text-success fs-3 flex-shrink-0 me-3"></i>
-                            <p class="mb-0 flex-grow-1 fs-5"><strong>Simple Explanations:</strong>  No jargon, no complicated terms. Just clear guidance in plain language.
-</p>
+                            <p class="mb-0 flex-grow-1 fs-5"><strong>Simple Explanations:</strong> No jargon, no
+                                complicated terms. Just clear guidance in plain language.
+                            </p>
                         </div>
                     </div>
 
@@ -367,8 +398,9 @@
                     <div class="col-12 col-md-6 border-start border-4 border-success">
                         <div class="d-flex align-items-center benefit-row p-3 rounded">
                             <i class="bi bi-check-circle-fill text-success fs-3 flex-shrink-0 me-3"></i>
-                            <p class="mb-0 flex-grow-1 fs-5"><strong>Personalized Advice: </strong> We look at your healthcare needs, medications, and budget to recommend the best options for you.
-</p>
+                            <p class="mb-0 flex-grow-1 fs-5"><strong>Personalized Advice: </strong> We look at your
+                                healthcare needs, medications, and budget to recommend the best options for you.
+                            </p>
                         </div>
                     </div>
 
@@ -376,18 +408,26 @@
                     <div class="col-12 col-md-6 border-start border-4 border-success">
                         <div class="d-flex align-items-center benefit-row p-3 rounded">
                             <i class="bi bi-check-circle-fill text-success fs-3 flex-shrink-0 me-3"></i>
-                            <p class="mb-0 flex-grow-1 fs-5"><strong>Step-by-Step Support:</strong> From enrollment to answering your questions later on, our team is here to help.
-</p>
+                            <p class="mb-0 flex-grow-1 fs-5"><strong>Step-by-Step Support:</strong> From enrollment to
+                                answering your questions later on, our team is here to help.
+                            </p>
                         </div>
                     </div>
 
                 </div>
 
+                <div class="row">
+                    <p class="fs-5 mt-3">With us, you are not just signing up for a plan. You are gaining a partner who
+                        cares about your
+                        long-term healthcare security.
+                    </p>
+                </div>
                 <!-- Call to Action Button -->
                 <div class="row justify-content-center mt-4">
                     <div class="col-auto">
                         <a href="#"
-                            class="text-white fw-bold btn btn-lg rounded-pill py-2 px-4 shadow-sm d-flex align-items-center" style="background-color: #70c515;">
+                            class="text-white fw-bold btn btn-lg rounded-pill py-2 px-4 shadow-sm d-flex align-items-center"
+                            style="background-color: #70c515;">
                             Talk to a Medicare Expert
                             <i class="bi bi-arrow-right-short fs-3 ms-2"></i>
                         </a>
@@ -400,7 +440,219 @@
 
 
 
+        <!-- Steps Section -->
+        <section class="py-5">
+            <div class="container">
 
+                <!-- Section Title -->
+                <h2 class="text-center mb-4 fw-bold fs-1"
+                    style="color:#70c515; font-family: Georgia, 'Times New Roman', Times, serif; line-height:1.2;">
+                    How It Works
+                </h2>
+                <p class="text-center fs-5 mb-5 text-secondary">
+                    Getting started with Medicare Insurance Plans does not have to be stressful. We have designed a
+                    simple process:
+                </p>
+
+                <!-- Steps Row -->
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Step 1 -->
+                    <div class="col-12 col-md-4">
+                        <div
+                            class="card h-100 shadow-sm border-0 rounded bg-light step-card d-flex flex-column align-items-center p-4">
+                            <div class="step-icon mb-3 d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-magnifying-glass-chart mt-4"
+                                    style="font-size:6rem; color:#70c515;"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2 text-center mt-4">Step 1</h5>
+                            <p class="fs-5 text-secondary text-center">Tell us about your health needs, lifestyle, and
+                                budget.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-12 col-md-4">
+                        <div
+                            class="card h-100 shadow-sm border-0 rounded bg-light step-card d-flex flex-column align-items-center p-4">
+                            <div class="step-icon mb-3 d-flex justify-content-center align-items-center">
+                                <i class="bi bi-clipboard-data-fill" style="font-size:6rem; color:#70c515;"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2 text-center">Step 2</h5>
+                            <p class="fs-5 text-secondary text-center">We show you the Medicare Insurance Plans that
+                                best match your situation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-12 col-md-4">
+                        <div
+                            class="card h-100 shadow-sm border-0 rounded bg-light step-card d-flex flex-column align-items-center p-4">
+                            <div class="step-icon mb-3 d-flex justify-content-center align-items-center">
+                                <i class="bi bi-shield-check" style="font-size:6rem; color:#70c515;"></i>
+                            </div>
+                            <h5 class="fw-bold mb-2 text-center">Step 3</h5>
+                            <p class="fs-5 text-secondary text-center"> You choose a plan and enroll with our expert
+                                guidance so you feel confident in your decision.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    <section style="background-color: #f8fff4;">
+            <!-- Frequently asked questions -->
+        <div class="container py-5">
+            <h3 class="text-center fw-bold mb-4 fs-2">Frequently Asked Questions
+            </h3>
+
+            <!-- Search -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Search FAQs...">
+                </div>
+            </div>
+
+            <!-- FAQs -->
+            <div class="row g-3">
+
+                <!-- FAQ 1 -->
+                <div class="col-md-6">
+                    <div class="faq-card p-3">
+                        <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                            data-bs-target="#faq1">
+                            <div>
+                                <div class="faq-title">Who is eligible for Medicare Insurance Plans?
+
+                                </div>
+
+                            </div>
+                            <button class="faq-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div id="faq1" class="collapse mt-2">
+                            <p class="mb-0">Most people qualify for Medicare when they turn 65. Some individuals under
+                                65 may also be eligible if they have certain disabilities.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="col-md-6">
+                    <div class="faq-card p-3">
+                        <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+                            <div>
+                                <div class="faq-title">What is the difference between Medicare Advantage and Original
+                                    Medicare?
+                                </div>
+
+                            </div>
+                            <button class="faq-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div id="faq2" class="collapse mt-2">
+                            <p class="mb-0">Original Medicare includes Part A and Part B and is managed by the federal
+                                government. Medicare Advantage, offered by private insurers, combines hospital and
+                                medical coverage and often includes prescription drugs and extra benefits.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="col-md-6">
+                    <div class="faq-card p-3">
+                        <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+                            <div>
+                                <div class="faq-title">Do I need prescription coverage if I rarely take medication?
+                                </div>
+
+                            </div>
+                            <button class="faq-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div id="faq3" class="collapse mt-2">
+                            <p class="mb-0"> Yes, it is recommended. Enrolling in a Part D plan early protects you from
+                                late penalties and ensures that you have coverage in case your prescription needs change
+                                later.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="col-md-6">
+                    <div class="faq-card p-3">
+                        <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                            data-bs-target="#faq4">
+                            <div>
+                                <div class="faq-title">When can I enroll in Medicare Insurance Plans?
+                                </div>
+
+                            </div>
+                            <button class="faq-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div id="faq4" class="collapse mt-2">
+                            <p class="mb-0">Your first opportunity is your Initial Enrollment Period, which happens
+                                around your 65th birthday. After that, you can make changes during the Annual Enrollment
+                                Period each year.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+
+                <!-- Heading -->
+                <h3 class="fw-bold mb-4 fs-2" style="color:#70c515;">Get the Right Medicare Coverage</h3>
+
+                <!-- Paragraphs -->
+                <p class="fs-5 mb-3">
+                    Medicare Insurance Plans are not one-size-fits-all. The right choice depends on your health, your budget, and your personal priorities. That is why having a trusted partner matters. At Secure Future Coverage, we are committed to making Medicare simple, clear, and tailored to you.
+                </p>
+                <p class="fs-5 mb-4">
+                    Do not wait until medical bills catch you off guard. Take control of your healthcare future today.
+                </p>
+
+                <!-- Call to Action Button -->
+                <a href="#"
+                   class="btn btn-lg rounded-pill fw-bold text-white px-4 py-2 shadow-sm d-inline-flex align-items-center"
+                   style="background-color: #70c515;">
+                    Compare Medicare Plans Today
+                    <i class="bi bi-arrow-right-short fs-3 ms-2"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
 
     </main>
     <div id="footer-placeholder"></div>

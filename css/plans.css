@@ -50,4 +50,30 @@
   .benefit-row:hover i {
     color: #218838; /* darker green icon on hover */
   }
+
+
+
+
+
+   .step-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+
+  .step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 767px) {
+    .step-card {
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+
+
+  
   
