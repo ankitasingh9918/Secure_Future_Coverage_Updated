@@ -22,9 +22,9 @@
 
 
 
-   /* Hover effect for cards */
   .medicare-card {
     transition: transform 0.3s, box-shadow 0.3s;
+    border-top:5px solid #70c515;
   }
 
   .medicare-card:hover {
