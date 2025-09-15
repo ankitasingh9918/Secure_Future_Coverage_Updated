@@ -1,30 +1,33 @@
 <div class="container-fluid">
-    <div class="row py-2" style="background-color: #58c614;">
-        <div class="col-12">
-            <div class="d-flex align-items-center">
+   <div class="row py-2" style="background-color: #58c614;">
+  <div class="col-12">
+    <div class="d-flex flex-column flex-md-row align-items-center">
+      
+      <!-- Heading -->
+      <h5 class="mb-2 mb-md-0 fw-bold text-md-nowrap me-md-3">
+        Notifications:
+      </h5>
 
-                <!-- Heading (fixed wider width) -->
-                <h5 class="mb-0 fw-bold text-nowrap" style="width: 250px;">
-                    Important Notifications :
-                </h5>
+      <!-- Scrolling Notifications -->
+      <marquee behavior="scroll" direction="left" scrollamount="5"
+        class="text-dark fw-bold w-100"
+        onmouseover="this.stop();" onmouseout="this.start();">
 
-                <!-- Scrolling Notifications -->
-                <marquee behavior="scroll" direction="left" scrollamount="5" class="text-white fw-bold w-100"
-                    onmouseover="this.stop();" onmouseout="this.start();">
+       <i class="fa-solid fa-bell me-2 ms-4 text-primary"></i>
+        Here are some notifications...
 
-                    <img src="images/new1.gif" alt="" class="me-2 ms-5" height="20">
-                    Here are some notifications...
+       <i class="fa-solid fa-bell me-2 ms-4 text-primary"></i>
+        New update is available, please check...
 
-                    <img src="images/new1.gif" alt="" class="me-2 ms-5" height="20">
-                    New update is available, please check...
+        <!-- <img src="images/new1.gif" alt="" class="me-2 ms-4" height="20"> -->
+        <i class="fa-solid fa-bell me-2 ms-4 text-primary"></i>
+        Server maintenance scheduled tonight.
+      </marquee>
 
-                    <img src="images/new1.gif" alt="" class="me-2 ms-5" height="20">
-                    Server maintenance scheduled tonight.
-                </marquee>
-
-            </div>
-        </div>
     </div>
+  </div>
+</div>
+
 
 
 
