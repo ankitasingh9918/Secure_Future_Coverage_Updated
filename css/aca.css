@@ -94,3 +94,9 @@ color: #70c515 !important;
     text-shadow: 0 0 10px rgba(112, 197, 21, 0.7);
     /* background-color: #70c515; */
 }
+
+
+.card:hover .icons i {
+  color: #4a900d; /* new color on hover */
+  transition: color 0.3s ease;
+}

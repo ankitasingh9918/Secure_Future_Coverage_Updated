@@ -15,7 +15,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/plans.css"> -->
+    <link rel="stylesheet" href="css/plans.css">
 
     <title>Final Expense Insurance</title>
     <style>
@@ -47,6 +47,10 @@
             color: green;
             font-size: 1.2rem;
         }
+        .card:hover .icons i {
+  color: #67c614 !important;  /* new color on hover */
+  transition: color 0.3s ease;
+}
     </style>
 </head>
 
@@ -293,20 +297,20 @@
                 <div class="row g-4">
                     <!-- Benefit 1 -->
                     <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                            <div class="mb-3">
-                                <i class="fas fa-wallet fa-4x text-success"></i>
-                            </div>
-                            <h5 class="fw-bold mb-2 fs-4">Affordable premiums</h5>
-                            <p class="text-muted mb-0 fs-5">These policies are usually less expensive than traditional
-                                life insurance.</p>
-                        </div>
-                    </div>
+  <div class="card h-100 border-0 shadow-sm p-4 text-center">
+      <div class="mb-3 icons">
+          <i class="fas fa-wallet fa-4x text-success"></i>
+      </div>
+      <h5 class="fw-bold mb-2 fs-4">Affordable premiums</h5>
+      <p class="text-muted mb-0 fs-5">These policies are usually less expensive than traditional
+          life insurance.</p>
+  </div>
+</div>
 
                     <!-- Benefit 2 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                            <div class="mb-3">
+                            <div class="mb-3 icons">
                                 <i class="fas fa-user-check fa-4x text-success"></i>
                             </div>
                             <h5 class="fw-bold mb-2 fs-4">Easy to qualify</h5>
@@ -318,7 +322,7 @@
                     <!-- Benefit 3 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                            <div class="mb-3">
+                            <div class="mb-3 icons">
                                 <i class="fas fa-hand-holding-usd fa-4x text-success"></i>
                             </div>
                             <h5 class="fw-bold mb-2 fs-4">Quick payout</h5>
@@ -330,7 +334,7 @@
                     <!-- Benefit 4 -->
                     <div class="col-md-6 col-lg-6">
                         <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                            <div class="mb-3">
+                            <div class="mb-3 icons">
                                 <i class="fas fa-sync-alt fa-4x text-success"></i>
                             </div>
                             <h5 class="fw-bold mb-2 fs-4">Flexibility</h5>
@@ -341,7 +345,7 @@
                     <!-- Benefit 5 -->
                     <div class="col-md-6 col-lg-6">
                         <div class="card h-100 border-0 shadow-sm p-4 text-center">
-                            <div class="mb-3">
+                            <div class="mb-3 icons">
                                 <i class="fas fa-smile-beam fa-4x text-success"></i>
                             </div>
                             <h5 class="fw-bold mb-2 fs-4">Peace of mind</h5>

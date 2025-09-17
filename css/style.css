@@ -206,6 +206,12 @@
       margin: 0 auto 20px;
       font-size: 30px;
       color: #333;
+       transition: all 0.3s ease; /* smooth animation */
+    }
+    .icon-circle:hover
+    {
+      border: 5px solid #75f505;
+  box-shadow: 0 4px 12px rgba(74, 144, 13, 0.4); /* green soft shadow */
     }
     .btn-custom {
       background-color: #5a1e76;
