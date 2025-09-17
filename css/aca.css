@@ -87,3 +87,10 @@
   transform: translateY(-5px);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
+
+
+.card .icon-circle i:hover{
+color: #70c515 !important;
+    text-shadow: 0 0 10px rgba(112, 197, 21, 0.7);
+    /* background-color: #70c515; */
+}
