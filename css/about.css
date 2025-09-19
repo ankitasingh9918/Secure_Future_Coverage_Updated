@@ -184,3 +184,44 @@
       color: green;
       font-size: 1.2rem;
     }
+
+
+    /* Service Card Detail Toggle */
+    .service-card {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.service-card .service-detail {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* Hover effect */
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.service-card:hover .service-detail {
+  opacity: 1;
+  max-height: 150px; /* enough space for text */
+}
+
+/* Click (active) effect */
+.service-card.active .service-detail {
+  opacity: 1;
+  max-height: 150px;
+}

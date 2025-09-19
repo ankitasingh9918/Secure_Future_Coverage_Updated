@@ -217,8 +217,11 @@ document.getElementById('successMsg').classList.add('d-none');
 });
 })();
 
-
-
-
 // body ky onload
+
+//Additional Service Hover
+function toggleDetail(card) {
+  card.classList.toggle("active");
+}
+
 
