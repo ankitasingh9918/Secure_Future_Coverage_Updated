@@ -1,0 +1,14 @@
+
+.service-icon {
+  font-size: 60px;
+  color: #198754; /* Bootstrap green */
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover .service-icon {
+  color: #28a745; /* brighter green */
+  /* transform: scale(1.2) rotate(10deg); */
+}
+
+

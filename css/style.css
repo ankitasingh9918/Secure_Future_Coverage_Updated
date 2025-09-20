@@ -17,7 +17,7 @@
         font-family:Georgia, 'Times New Roman', Times, serif;
         color: #70c515;
     }
-    body p{
+    body p,ul li{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
