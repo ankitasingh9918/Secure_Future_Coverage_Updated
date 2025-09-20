@@ -1,96 +1,36 @@
 <div class="container-fluid">
-   <div class="row py-2" style="background-color: #58c614;">
-  <div class="col-12">
-    <div class="d-flex flex-column flex-md-row align-items-center">
-      
-      <!-- Heading -->
-      <h5 class="mb-2 mb-md-0 fw-bold text-md-nowrap me-md-3">
-        Notifications:
-      </h5>
-
-      <!-- Scrolling Notifications -->
-      <marquee behavior="scroll" direction="left" scrollamount="5"
-        class="text-white fw-bold w-100"
-        onmouseover="this.stop();" onmouseout="this.start();">
-
-       <i class="fa-solid fa-bell me-2 ms-4 text-primary"></i>
-        Here are some notifications...
-
-       <i class="fa-solid fa-bell me-2 ms-4 text-primary"></i>
-        New update is available, please check...
-
-        <!-- <img src="images/new1.gif" alt="" class="me-2 ms-4" height="20"> -->
-        <i class="fa-solid fa-bell me-2 ms-4 text-primary"></i>
-        Server maintenance scheduled tonight.
-      </marquee>
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
 
 
     <div class="row">
 
         <div class="col-12">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2 border-bottom py-1">
-
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom py-1 shadow fixed-top">
                 <div class="container-fluid">
-
                     <a class="navbar-brand" href="index.html">
                         <img src="images/logobg1.jpg" alt="Secure Future Coverage Logo" class="rounded-pill"
-                            style="height:60px; width:160px;">
+                            style="height:50px; width:120px;">
                     </a>
+
                     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav">
-                        <span><i class="bi bi-list fw-bold fs-3"></i> </span>
+                        <span><i class="bi bi-list fw-bold fs-3"></i></span>
                     </button>
-                    <div class="collapse navbar-collapse menubar " id="navbarNav">
 
+                    <div class="collapse navbar-collapse menubar" id="navbarNav">
                         <ul class="navbar-nav gap-3 ms-auto">
-                            <li class="nav-item ">
-                                <a class="nav-link active" aria-current="page" href="index.html">
-                                    <!-- <i class="fa-solid fa-building-lock fs-4 text-success me-2"></i> -->
-                                    Home</a>
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tools_resource.html">Tools & Resources</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="services.html">
-                                    <!-- <i class="fa-solid fa-building-lock fs-4 text-success me-2"></i> -->
-                                    Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="tools_resource.html">
-                                    <!-- <i class="fa-solid fa-screwdriver-wrench fs-4 text-success me-2"></i> -->
-                                    Tools & Resources</a>
-                            </li>
-
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="aboutus.html">
-                                    <!-- <i class="fa-solid fa-hand-holding-medical fs-4 text-success me-2"></i> -->
-                                    About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="support.html">
-                                    <!-- <i class="fa-solid fa-hand-holding-medical fs-4 text-success me-2"></i> -->
-                                    Support</a>
-                            </li>
-                           
-
-
+                            <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
                         </ul>
+
                         <ul class="navbar-nav ms-auto gap-2">
- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="countryDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <!-- <i class="fa-solid fa-globe fs-4 text-success me-2"></i> -->
-                                    <img src="images/usa.png" alt="usaicons" style="height:30px;width:30px;">
-                                    USA
-                                </a>
+                            <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#"
+                                    id="countryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- <i class="fa-solid fa-globe fs-4 text-success me-2"></i> --> <img
+                                        src="images/usa.png" alt="usaicons" style="height:30px;width:30px;"> USA </a>
                                 <ul class="dropdown-menu custom-dropdown" aria-labelledby="countryDropdown">
                                     <li><a class="dropdown-item" href="#">Alabama</a></li>
                                     <li><a class="dropdown-item" href="#">California</a></li>
@@ -116,36 +56,13 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link btn text-white px-3 fw-bold" style="background-color:#70c515;"
-                                    href="support.html">
-                                    Login
-                                </a>
+                                    href="support.html">Login</a>
                             </li>
                         </ul>
                     </div>
-
-                    <!-- <div class="col-sm-2 col-md-2 mt-2 mb-2 d-flex">
-                        <a href="#" data-bs-toggle="modal" onclick="openModal()" data-bs-target="#exampleModal" class="btncontact btn-lg w-auto ms-auto" data-text="button">
-                            <span>Contact Us</span>
-                        </a> -->
-                    <!-- <a href="#" class="text-white fw-bold py-2 ms-auto text-decoration-none btn btn-secondary">
-                           Find Plans
-                        </a> -->
-                    <!-- </div> -->
                 </div>
-
-
-
-
-                <!-- contact model  -->
-                <!-- Button trigger modal -->
-                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button> -->
-
-                <!-- Modal -->
-
-
             </nav>
+
             <div class="modal fade" id="humanaModal" tabindex="-1" aria-labelledby="humanaModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -202,4 +119,31 @@
         </div>
     </div>
 
+    <div class="row py-2" style="background-color: #58c614;margin-top: 70px;">
+        <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+
+                <!-- Heading -->
+                <h5 class="mb-2 mb-md-0 fw-bold text-md-nowrap me-md-3">
+                    Notifications:
+                </h5>
+
+                <!-- Scrolling Notifications -->
+                <marquee behavior="scroll" direction="left" scrollamount="5" class="text-white fw-bold w-100"
+                    onmouseover="this.stop();" onmouseout="this.start();">
+
+                    <i class="fa-solid fa-bell me-2 ms-4 text-primary"></i>
+                    Here are some notifications...
+
+                    <i class="fa-solid fa-bell me-2 ms-4 text-primary"></i>
+                    New update is available, please check...
+
+                    <!-- <img src="images/new1.gif" alt="" class="me-2 ms-4" height="20"> -->
+                    <i class="fa-solid fa-bell me-2 ms-4 text-primary"></i>
+                    Server maintenance scheduled tonight.
+                </marquee>
+
+            </div>
+        </div>
+    </div>
 </div>
