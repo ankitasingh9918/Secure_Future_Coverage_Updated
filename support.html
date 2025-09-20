@@ -20,6 +20,10 @@
     <!-- fav icon  -->
      <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
+     <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 
     <title>Support</title>
     <style>
@@ -68,7 +72,7 @@
             <!-- Row 1 -->
             <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-4 d-flex">
-                    <div class="card custom-card text-center h-100 shadow-sm w-100">
+                    <div class="card custom-card text-center h-100 shadow-sm w-100" data-aos="fade-up" data-aos-duration="2000">
                         <div class="py-4">
                             <img src="images/livechat.png" class="img-fluid mt-3" alt="livechat"
                                 style="height:80px; width:80px;">
@@ -80,7 +84,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4 d-flex">
-                    <div class="card custom-card text-center h-100 shadow-sm w-100">
+                    <div class="card custom-card text-center h-100 shadow-sm w-100" data-aos="fade-up" data-aos-duration="2000">
                         <div class="py-4">
                             <img src="images/support.png" class="img-fluid mt-3" alt="support"
                                 style="height:80px; width:80px;">
@@ -95,7 +99,7 @@
             <!-- Row 2 -->
             <div class="row g-4 justify-content-center mt-3">
                 <div class="col-md-6 col-lg-4 d-flex">
-                    <div class="card custom-card text-center h-100 shadow-sm w-100">
+                    <div class="card custom-card text-center h-100 shadow-sm w-100" data-aos="fade-up" data-aos-duration="2000">
                         <div class="py-4">
                             <img src="images/agents.jpg" class="img-fluid" alt="agents"
                                 style="height:80px; width:80px;">
@@ -107,7 +111,7 @@
                 </div>
 
                 <div class="col-md-6 col-lg-4 d-flex">
-                    <div class="card custom-card text-center h-100 shadow-sm w-100">
+                    <div class="card custom-card text-center h-100 shadow-sm w-100" data-aos="fade-up" data-aos-duration="2000">
                         <div class="py-4">
                             <img src="images/contact.png" class="img-fluid" alt="contact"
                                 style="height:80px; width:80px;">
@@ -394,6 +398,15 @@
             var chatModal = new bootstrap.Modal(document.getElementById('chatModal'));
             chatModal.show();
         });
+    </script>
+
+
+
+
+<!-- aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

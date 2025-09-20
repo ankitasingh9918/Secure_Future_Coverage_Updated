@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
 
+     <!-- aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -56,7 +59,7 @@
        <section class="text-center mt-5 bg-light py-5">
     <!-- Heading Center with Animated Divider -->
     <div class="position-relative d-inline-flex align-items-center mb-4 heading-divider">
-        <h3 class="fw-bold mb-0 display-5">Mission and Vision</h3>
+        <h3 class="fw-bold mb-0 display-5" data-aos="zoom-in" data-aos-duration="2000">Mission and Vision</h3>
     </div>
 
     <!-- Paragraph -->
@@ -70,7 +73,7 @@
         <section class="py-5" style="background-color: rgb(213, 223, 231);">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 col-md-12">
+                    <div class="col-lg-10 col-md-12" data-aos="fade-up" data-aos-duration="2000">
                         <div class="p-4 rounded shadow-sm bg-white border-start border-5 border-success border-top">
 
                             <!-- Heading Centered -->
@@ -148,7 +151,7 @@
         <section class="py-5" style="background-color: #e3ecda;">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-10 col-md-12">
+                    <div class="col-lg-10 col-md-12" data-aos="fade-up" data-aos-duration="2000">
                         <div class="p-4 rounded shadow-sm bg-white border-start border-5 border-success border-top">
 
                             <!-- Heading Centered -->
@@ -226,7 +229,7 @@
                 <div class="row align-items-center">
 
                     <div class="col-lg-6 mb-4 mb-lg-0">
-                        <h2 class="fw-bold mb-3"
+                        <h2 class="fw-bold mb-3" data-aos="zoom-in" data-aos-duration="2000"
                             style="color: #3bdc16;font-family: Georgia, 'Times New Roman', Times, serif;">About Medicare
                         </h2>
                         <p class="text-muted fs-5">
@@ -271,6 +274,13 @@
                     document.getElementById('footer-placeholder').innerHTML = data;
                 });
         });
+    </script>
+
+
+ <!-- aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
