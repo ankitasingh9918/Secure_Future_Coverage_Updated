@@ -14,6 +14,9 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- aos animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/services.css">
@@ -41,12 +44,12 @@
 
       <div class="container py-5">
         <div class="row g-4 justify-content-center">
-          <h2 class="fs-1 fw-bold text-uppercase py-4 text-center"
+          <h2 class="fs-1 fw-bold text-uppercase py-4 text-center" data-aos="zoom-in" data-aos-duration="2000"
             style="color: #70c515;font-family:Georgia, 'Times New Roman', Times, serif;">insurance
             Services</h2>
           <!-- Medicare Plans -->
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card card-custom text-center p-4 h-100 shadow">
+            <div class="card card-custom text-center p-4 h-100 shadow" data-aos="fade-up" data-aos-duration="2000">
               <div class="icon-circle">
                 <img src="images/plus.png" alt="" class="img-fluid" style="max-height: 50px;">
               </div>
@@ -64,7 +67,7 @@
 
           <!-- ACA Marketplace -->
           <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card card-custom text-center p-4 h-100 shadow">
+            <div class="card card-custom text-center p-4 h-100 shadow" data-aos="fade-up" data-aos-duration="2000">
               <div class="icon-circle">
                 <img src="images/addtocart.png" alt="" class="img-fluid" style="max-height: 50px;">
               </div>
@@ -73,7 +76,8 @@
               <!-- <a href="#" class="btn mt-2 fw-bold text-white" style="background-color:#58c614;">Learn
                                 More</a> -->
               <div class="d-grid gap-2 d-md-block">
-                <a href="plans_ACA.html" class="btn text-white fw-bold" type="button" style="background-color: #70c515;">Plan
+                <a href="plans_ACA.html" class="btn text-white fw-bold" type="button"
+                  style="background-color: #70c515;">Plan
                   Details</a>
                 <a href="quote_ACA.html" class="btn btn-primary fw-bold" type="button">Get a Quote</a>
               </div>
@@ -82,7 +86,7 @@
 
           <!-- Final Expense Insurance -->
           <div class="col-lg-4 col-md-6 col-sm-12 ">
-            <div class="card card-custom text-center p-4 h-100 shadow">
+            <div class="card card-custom text-center p-4 h-100 shadow" data-aos="fade-up" data-aos-duration="2000">
               <div class="icon-circle">
                 <img src="images/openbook.png" alt="" class="img-fluid" style="max-height: 50px;">
               </div>
@@ -106,17 +110,19 @@
 
     <div class="container-fluid">
       <div class="container my-5">
-        <h3 class="fw-bold mb-4 text-center text-uppercase fs-2 text-dark" style="color: #70c515;">Additional Services
+        <h3 class="fw-bold mb-4 text-center text-uppercase fs-2" style="color: #70c515;" data-aos="zoom-in"
+                data-aos-duration="2000">Additional Services
         </h3>
         <div class="row g-4 align-items-stretch">
 
           <!-- Card 1 -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-calendar service-icon"></i>
               <div class="service-title">Short-Term & Temporary Plans</div>
               <div class="service-detail">
-                Coverage for short periods to fill gaps between 
+                Coverage for short periods to fill gaps between
                 jobs or other insurance. Protect yourself with essential
                 health benefits when you need them most.
               </div>
@@ -125,7 +131,8 @@
 
           <!-- Card 2 (alt bg) -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-handshake service-icon"></i>
               <div class="service-title">Employer / Group Plans</div>
               <div class="service-detail">
@@ -137,7 +144,8 @@
 
           <!-- Card 3 -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-tooth service-icon"></i>
               <div class="service-title">Dental & Vision Plans</div>
               <div class="service-detail">
@@ -149,7 +157,8 @@
 
           <!-- Card 4 (alt bg) -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-desktop service-icon"></i>
               <div class="service-title">Telemedicine & Virtual Care</div>
               <div class="service-detail">
@@ -161,7 +170,8 @@
 
           <!-- Card 5 -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-pills service-icon"></i>
               <div class="service-title">Prescription Drug Coverage</div>
               <div class="service-detail">
@@ -173,7 +183,8 @@
 
           <!-- Card 6 (alt bg) -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-capsules service-icon"></i>
               <div class="service-title">Chronic Care Management</div>
               <div class="service-detail">
@@ -185,7 +196,8 @@
 
           <!-- Card 7 -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-heart service-icon"></i>
               <div class="service-title">Mental Health</div>
               <div class="service-detail">
@@ -196,7 +208,8 @@
 
           <!-- Card 8 (alt bg) -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-baby service-icon"></i>
               <div class="service-title">Maternity Services</div>
               <div class="service-detail">
@@ -208,7 +221,8 @@
 
           <!-- Card 9 -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-dumbbell service-icon"></i>
               <div class="service-title">Wellness & Preventive Programs</div>
               <div class="service-detail">
@@ -220,7 +234,8 @@
 
           <!-- Card 10 -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-piggy-bank service-icon"></i>
               <div class="service-title">HSA & FSA Support</div>
               <div class="service-detail">
@@ -232,7 +247,8 @@
 
           <!-- Card 11 (alt bg) -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-file-contract service-icon"></i>
               <div class="service-title"> Claims & Enrollment Support</div>
               <div class="service-detail">
@@ -244,7 +260,8 @@
 
           <!-- Card 12 -->
           <div class="col-6 col-md-4 col-lg-3">
-            <div class="service-card alt h-100" onclick="toggleDetail(this)">
+            <div class="service-card alt h-100" onclick="toggleDetail(this)" data-aos="zoom-in"
+                data-aos-duration="2000">
               <i class="fa-solid fa-scale-balanced service-icon"></i>
               <div class="service-title">Plan Comparison Tools</div>
               <div class="service-detail">
@@ -350,6 +367,12 @@
     }
   </script>
 
+
+  <!-- aos animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
